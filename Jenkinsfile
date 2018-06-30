@@ -38,8 +38,7 @@ pipeline {
     }
     stage('push') {
       steps {
-        sh '''docker login -u lifnadia -p lifnadia29
-docker push lifnadia/substraction-service:latest
+        sh '''docker push lifnadia/substraction-service:latest
 '''
       }
     }
